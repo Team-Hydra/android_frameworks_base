@@ -177,15 +177,15 @@ public class DozeSensors {
                         dozeLog),
         };
 
-        if (!mDisableProx) {
-            setProxListening(false);  // Don't immediately start listening when we register.
-            mProximitySensor.register(
-                    proximityEvent -> {
-                        if (proximityEvent != null) {
-                            mProxCallback.accept(!proximityEvent.getBelow());
-                        }
-                    });
-        }
+       // if (!mDisableProx) {
+       //    setProxListening(false);  // Don't immediately start listening when we register.
+       //  mProximitySensor.register(
+       //        proximityEvent -> {
+       //          if (proximityEvent != null) {
+       //            mProxCallback.accept(!proximityEvent.getBelow());
+       //      }
+       //});
+       // }
     }
 
     /**
